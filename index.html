@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#tasks">Tasks</a>
+            <a href="#chat">Chat</a>
+        </nav>
+    </header>
+    <main>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div id="project-list" class="grid-container">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+            <button onclick="createProject()">Create New Project</button>
+        </section>
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <div id="task-list" class="grid-container">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+            <button onclick="createTask()">Create New Task</button>
+        </section>
+        <section id="chat">
+            <h2>Chat</h2>
+            <div id="chat-box">
+                <!-- Chat messages will be loaded here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button onclick="sendChatMessage()">Send</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
